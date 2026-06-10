@@ -103,16 +103,15 @@
 .Start_screen_content {
     display: flex;
     margin-top: 63px;
-    height: 728px;
-    margin-right: 40px;
-    margin-left: 40px;
-
 }
 
 .Content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 1200px;
+    height: 728px;
+    margin: 40px;
 
 }
 
@@ -200,7 +199,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 55px;
+    gap: 90px;
 }
 
 .name_pets {
@@ -261,4 +260,43 @@
 .slider {
     display: flex;
     gap: 30px;
+    align-items: center;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 9px;
+    gap: 27px;
+    background: var(--color-light-s);
+}
+
+.name_slide {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--color-dark-l);
+    
+}
+
+.button_slide {
+    border: 2px solid var(--color-primary);
+    border-radius: 100px;
+    width: 187px;
+    height: 52px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-3xl);
+    background: var(--color-light-s);
+    margin-bottom: 30px;
+}
+
+.button_slide:hover {
+    background: var(--color-light-l);
 }
