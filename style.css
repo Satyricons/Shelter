@@ -17,30 +17,23 @@
     --color-primary-light: #fddcc4;
     --start-screen-gradient-background: #211f20;
     --footer-gradient-background: #211f20;
-
     --font-family: "Georgia", sans-serif;
     --second-family: "Arial", sans-serif;
     --third-family: "Inter", sans-serif;
 }
 
-
-
-
-
-
-
-
 .body {
     box-sizing: border-box;
     margin: 0px;
-    width: 1280px;
+
     height: auto;
 }
 
 .main {
     margin: 0 auto;
     display: flex;
-    width: 1200px;
+    flex-direction: column;
+    width: 1280px;
     height: 908px;
     background-color: rgb(66, 53, 53);
 }
@@ -49,8 +42,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1200px;
-    height: 60px;
     margin: 30px 40px 30px 40px
 }
 
@@ -68,6 +59,7 @@
     letter-spacing: 0.06em;
     color: var(--color-primary);
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 .Subtitle {
@@ -76,6 +68,7 @@
     font-size: 13px;
     letter-spacing: 0.1em;
     color: var(--color-light-xl);
+    cursor: pointer;
 }
 
 .Nav-menu ul {
@@ -108,5 +101,164 @@
 
 
 .Start_screen_content {
+    display: flex;
+    margin-top: 63px;
     height: 728px;
+    margin-right: 40px;
+    margin-left: 40px;
+
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.name_content {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    color: var(--color-light-xl);
+    margin-bottom: 40px;
+}
+
+.title_content {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: var(--color-dark-s);
+    margin-bottom: 40px;
+}
+
+.button_content {
+    border-radius: 100px;
+    border-style: hidden;
+    width: 207px;
+    height: 52px;
+    background: var(--color-primary);
+    margin-bottom: 40px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-3xl);
+}
+
+.button_content:hover {
+    cursor: pointer;
+    background: var(--color-primary-light);
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 1280px;
+    height: 588px;
+}
+
+
+
+.about_content {
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+}
+
+.about_content_name {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+    margin-bottom: 30px;
+}
+
+.about_content_title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: var(--color-dark-xl);
+    margin-bottom: 30px;
+}
+
+.pets {
+    margin: 0 auto;
+    width: 1280px;
+    height: 877px;
+    display: flex;
+    background: var(--color-light-l);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.name_pets {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--color-dark-l);
+}
+
+.container_slider_pets {
+    width: 1200px;
+    height: 435px;
+}
+
+.button_pets {
+    border-radius: 100px;
+    border-style: hidden;
+    width: 261px;
+    height: 52px;
+    background: var(--color-primary);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-3xl);
+}
+
+.button_pets:hover {
+    cursor: pointer;
+    background: var(--color-primary-light);
+}
+
+.container_slider_pets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prev,
+.next {
+    border-radius: 100px;
+    border: 2px solid var(--color-primary);
+    padding: 14px;
+    fill: var(--color-dark-3xl);
+    transition: 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.slider {
+    display: flex;
+    gap: 30px;
 }
