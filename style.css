@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Georgia';
+    src: url('./fonts/Georgia/georgia.ttf');
+}
+
+:root {
+    --color-light-xl: #fff;
+    --color-light-l: #f6f6f6;
+    --color-light-s: #fafafa;
+    --color-dark-s: #cdcdcd;
+    --color-dark-m: #b2b2b2;
+    --color-dark-l: #545454;
+    --color-dark-xl: #4c4c4c;
+    --color-dark-2xl: #444;
+    --color-dark-3xl: #292929;
+    --color-primary: #f1cdb3;
+    --color-primary-light: #fddcc4;
+    --start-screen-gradient-background: #211f20;
+    --footer-gradient-background: #211f20;
+
+    --font-family: "Georgia", sans-serif;
+    --second-family: "Arial", sans-serif;
+    --third-family: "Inter", sans-serif;
+}
+
+
+
+
+
+
+
+
+.body {
+    box-sizing: border-box;
+    margin: 0px;
+    width: 1280px;
+    height: auto;
+}
+
+.main {
+    margin: 0 auto;
+    display: flex;
+    width: 1200px;
+    height: 908px;
+    background-color: rgb(66, 53, 53);
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 60px;
+    margin: 30px 40px 30px 40px
+}
+
+.logo {
+    display: flex;
+    width: 184px;
+
+}
+
+.Title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: var(--color-primary);
+    margin-bottom: 5px;
+}
+
+.Subtitle {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    color: var(--color-light-xl);
+}
+
+.Nav-menu ul {
+    list-style: none;
+    display: inline-flex;
+
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: var(--color-dark-s);
+    gap: 35px;
+    width: 443px;
+    height: 27px;
+}
+
+.Nav-menu a {
+    text-decoration: none;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: var(--color-dark-s);
+}
+
+.Nav-menu a:hover {
+    color: #fff;
+    border-bottom: 3px solid var(--color-primary-light);
+}
+
+
+.Start_screen_content {
+    height: 728px;
+}
