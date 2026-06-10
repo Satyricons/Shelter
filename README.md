@@ -5,3 +5,5 @@
 2. Сабмит — деплой + PR + cross-check. 
 
 https://publish.obsidian.md/juniornotess/RS-Bootcamp-2026/Tasks/02a+—+Shelter+Part+1+—+Fixed+Layout
+
+a) Временные метки
