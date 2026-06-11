@@ -25,7 +25,6 @@
 .body {
     box-sizing: border-box;
     margin: 0px;
-
     height: auto;
 }
 
@@ -35,7 +34,7 @@
     flex-direction: column;
     width: 1280px;
     height: 908px;
-    background-color: rgb(66, 53, 53);
+    background-color: var(--start-screen-gradient-background);
 }
 
 .Header {
@@ -163,8 +162,6 @@
     height: 588px;
 }
 
-
-
 .about_content {
     display: flex;
     flex-direction: column;
@@ -279,7 +276,7 @@
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--color-dark-l);
-    
+
 }
 
 .button_slide {
@@ -299,4 +296,182 @@
 
 .button_slide:hover {
     background: var(--color-light-l);
+}
+
+.help {
+    margin: 0 auto;
+    width: 1280px;
+    height: 611px;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--color-light-xl);
+}
+
+.name_help {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--color-dark-l);
+}
+
+.icon_help {
+    width: 1026px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.icon_help_bottom {
+    width: 850px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    transition: 0.2s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.name_icon {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--color-dark-l);
+}
+
+.donation {
+    margin: 0 auto;
+    width: 1280px;
+    height: 462px;
+    display: flex;
+    flex-direction: row;
+    background: var(--color-light-l);
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.img_donation {
+    width: 505px;
+}
+
+.text_donation {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.name_text_donation {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.title_text_donation {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.container_tel_text_donation {
+    border-radius: 9px;
+    width: 349px;
+    height: 43px;
+    background: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tel_text_donation {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.ps_text_donation {
+    font-family: var(--second-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--color-dark-m);
+}
+
+.footer {
+    margin: 0 auto;
+    width: 1280px;
+    height: 350px;
+    background-color: var(--footer-gradient-background);
+}
+
+.container_footer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    justify-content: space-around;
+    ;
+}
+
+.name_footer {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-light-xl);
+}
+
+.adress_footer,
+.email_footer,
+.tel_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.text_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: var(--color-primary);
 }
