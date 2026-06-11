@@ -34,7 +34,7 @@
     flex-direction: column;
     width: 1280px;
     height: 908px;
-    background-color: var(--start-screen-gradient-background);
+    background: url(./img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
 }
 
 .Header {
@@ -267,6 +267,11 @@
     border-radius: 9px;
     gap: 27px;
     background: var(--color-light-s);
+    transition: 0.3s;
+}
+
+.slide:hover {
+    box-shadow: 0.3em 0.3em 1em rgba(190, 190, 190, 0.3);
 }
 
 .name_slide {
@@ -296,6 +301,7 @@
 
 .button_slide:hover {
     background: var(--color-light-l);
+    cursor: pointer;
 }
 
 .help {
@@ -435,7 +441,7 @@
     margin: 0 auto;
     width: 1280px;
     height: 350px;
-    background-color: var(--footer-gradient-background);
+    background: url(./img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
 }
 
 .container_footer {
@@ -462,6 +468,20 @@
     flex-direction: row;
     align-items: center;
     gap: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.adress_footer:hover,
+.email_footer:hover,
+.tel_footer:hover{
+    transform: scale(1.05);
+    opacity: 0.6;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--color-primary);
 }
 
 .text_footer {
