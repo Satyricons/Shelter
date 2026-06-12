@@ -22,35 +22,57 @@
     --third-family: "Inter", sans-serif;
 }
 
-.body {
-    box-sizing: border-box;
-    margin: 0px;
-    height: auto;
+* {
+     box-sizing: border-box; 
 }
 
 .main {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     width: 1280px;
     height: 908px;
     background: url(./img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
 }
 
-.Header {
+.main_pets {
+    margin: 0 auto;
+    width: 1280px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-light-xl);
+}
+
+.container_head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+}
+
+.head {
+    width: 1200px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 40px 30px 40px
+    
 }
 
 .logo {
     display: flex;
-    width: 184px;
-
+    gap: 5px;
+    flex-direction: column;
+    cursor: pointer;
 }
 
-.Title {
+.title {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 32px;
@@ -58,33 +80,43 @@
     letter-spacing: 0.06em;
     color: var(--color-primary);
     margin-bottom: 5px;
-    cursor: pointer;
+
 }
 
-.Subtitle {
+.title_pets {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l);
+}
+
+.subtitle {
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 13px;
     letter-spacing: 0.1em;
     color: var(--color-light-xl);
-    cursor: pointer;
+
 }
 
-.Nav-menu ul {
-    list-style: none;
-    display: inline-flex;
-
+.subtitle_pets {
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 15px;
-    line-height: 160%;
-    color: var(--color-dark-s);
-    gap: 35px;
-    width: 443px;
-    height: 27px;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    color: var(--color-dark-3xl);
 }
 
-.Nav-menu a {
+.nav-menu ul,
+.nav-menu_pets ul {
+    list-style: none;
+    display: inline-flex;  
+    gap: 37px;  
+}
+
+.nav-menu a {
     text-decoration: none;
     font-family: var(--second-family);
     font-weight: 400;
@@ -93,25 +125,37 @@
     color: var(--color-dark-s);
 }
 
-.Nav-menu a:hover {
+.nav-menu_pets a {
+    text-decoration: none;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: var(--color-dark-l);
+}
+
+.nav-menu a:hover {
     color: #fff;
     border-bottom: 3px solid var(--color-primary-light);
 }
 
-
-.Start_screen_content {
-    display: flex;
-    margin-top: 63px;
+.nav-menu_pets a:hover {
+    border-bottom: 3px solid var(--color-primary-light);
 }
 
-.Content {
+.start_screen_content {
+    display: flex;
+    width: 1200px;
+}
+
+.content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 1200px;
-    height: 728px;
-    margin: 40px;
+}
 
+.img_content {
+    display: flex;
 }
 
 .name_content {
@@ -153,6 +197,7 @@
 }
 
 .about {
+    width: 1200px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -165,7 +210,7 @@
 .about_content {
     display: flex;
     flex-direction: column;
-    width: 430px;
+    width: 408px;
 }
 
 .about_content_name {
@@ -187,16 +232,23 @@
     margin-bottom: 30px;
 }
 
-.pets {
+.container_pets {
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
     width: 1280px;
     height: 877px;
-    display: flex;
     background: var(--color-light-l);
+}
+
+.pets {
+    width: 1200px;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    ;
     flex-direction: column;
-    gap: 90px;
+
 }
 
 .name_pets {
@@ -211,7 +263,7 @@
 
 .container_slider_pets {
     width: 1200px;
-    height: 435px;
+    /* height: 435px; */
 }
 
 .button_pets {
@@ -237,13 +289,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .prev,
 .next {
     border-radius: 100px;
     border: 2px solid var(--color-primary);
-    padding: 14px;
+    width: 52px;
+    height: 52px;
     fill: var(--color-dark-3xl);
     transition: 0.3s;
 }
@@ -254,11 +309,6 @@
     cursor: pointer;
 }
 
-.slider {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
 
 .slide {
     display: flex;
@@ -438,19 +488,22 @@
 }
 
 .footer {
+    display: flex;
     margin: 0 auto;
     width: 1280px;
     height: 350px;
     background: url(./img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
 .container_footer {
+    width: 1200px;
+    height: 310px;
     display: flex;
     flex-direction: row;
-    padding-top: 40px;
-    justify-content: space-around;
-    ;
-}
+    justify-content: space-between;
+    }
 
 .name_footer {
     font-family: var(--font-family);
@@ -474,7 +527,7 @@
 
 .adress_footer:hover,
 .email_footer:hover,
-.tel_footer:hover{
+.tel_footer:hover {
     transform: scale(1.05);
     opacity: 0.6;
 }
@@ -494,4 +547,36 @@
     line-height: 115%;
     letter-spacing: 0.06em;
     color: var(--color-primary);
+}
+
+.our_pets {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1280px;
+    height: 1342px;
+    background: var(--color-light-l);
+}
+
+.container_navigation_pets {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.page_pets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border-style: hidden;
+    width: 52px;
+    height: 52px;
+    background: var(--color-primary);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-3xl);
 }
