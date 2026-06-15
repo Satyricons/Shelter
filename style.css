@@ -130,24 +130,6 @@ all: unset;
     cursor: pointer;
 }
 
-/* .nav-menu a {
-    text-decoration: none;
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 160%;
-    color: var(--color-dark-s);
-} */
-
-/* .nav-menu_pets a {
-    text-decoration: none;
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 160%;
-    color: var(--color-dark-l);
-} */
-
 .nav-menu a:hover {
     color: #fff;
     border-bottom: 3px solid var(--color-primary-light);
