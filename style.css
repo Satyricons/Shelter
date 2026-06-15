@@ -311,12 +311,21 @@ cursor: pointer;
     transition: 0.3s;
 }
 
+#prev{
+    border: 2px solid var(--color-dark-s);
+
+
+}
+
 .prev:hover,
 .next:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
 
+#prev:hover{
+    transform: scale(1);
+}
 
 .slide {
     display: flex;
