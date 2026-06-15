@@ -30,6 +30,10 @@ a {
 all: unset;
 }
 
+head a{
+ all: unset;   
+}
+
 .main {
     margin: 0 auto;
     display: flex;
