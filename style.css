@@ -26,12 +26,10 @@
      box-sizing: border-box; 
 }
 
-a {
-all: unset;
-}
+html { scroll-behavior: smooth; -webkit-scroll-behavior: smooth }
 
-head a{
- all: unset;   
+a, h1 {
+all: unset;
 }
 
 .main {
@@ -82,7 +80,7 @@ head a{
 
 
 
-.title {
+.title h1, .title {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 32px;
