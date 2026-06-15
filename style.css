@@ -30,9 +30,9 @@ a {
 all: unset;
 }
 
-head a{
+/* head a{
  all: unset;   
-}
+} */
 
 .main {
     margin: 0 auto;
