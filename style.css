@@ -200,7 +200,7 @@ h1 {
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     justify-content: space-between;
     /* gap: 40px; */
     width: 460px;
@@ -236,7 +236,7 @@ h1 {
     font-size: 44px;
     line-height: 130%;
     color: var(--color-light-xl);
-    /* margin-bottom: 40px; */
+
 }
 
 .title_content {
@@ -245,7 +245,7 @@ h1 {
     font-size: 15px;
     line-height: 160%;
     color: var(--color-dark-s);
-    /* margin-bottom: 40px; */
+
 }
 
 .button_content {
@@ -254,7 +254,7 @@ h1 {
     width: 207px;
     height: 52px;
     background: var(--color-primary);
-    margin-bottom: 40px;
+ 
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 17px;
