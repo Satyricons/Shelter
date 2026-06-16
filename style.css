@@ -54,7 +54,7 @@ h1 {
 
 @media (max-width: 1280px) {
     .main {
-        width: 768px;
+
         height: 1165px;    
         align-items: center;
         justify-content: space-between;
@@ -265,21 +265,28 @@ h1 {
     background: var(--color-primary-light);
 }
 
-.about {
-    width: 1200px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+.about {  
     margin: 0 auto;
-    /* width: 1280px; */
     height: 588px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.about_content {
+.about_pets {
+    width: 1200px;
+    height: 408px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.about_content {    
+    width: 430px;
+    height: 380px;
     display: flex;
     flex-direction: column;
-    width: 408px;
+    justify-content: space-between;
 }
 
 .about_content_name {
@@ -289,7 +296,7 @@ h1 {
     line-height: 130%;
     letter-spacing: 0.06em;
     color: var(--color-dark-l);
-    margin-bottom: 30px;
+
 }
 
 .about_content_title {
@@ -298,7 +305,7 @@ h1 {
     font-size: 15px;
     line-height: 160%;
     color: var(--color-dark-xl);
-    margin-bottom: 30px;
+
 }
 
 .container_pets {
