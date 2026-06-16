@@ -90,7 +90,7 @@ h1 {
     align-items: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
     .head{        
         width: 708px;      
         
@@ -184,6 +184,7 @@ h1 {
     display: flex;
     width: 1200px;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -201,6 +202,7 @@ h1 {
     justify-content: center;
     gap: 40px;
     width: 460px;
+    height: 322px;
 }
 
 
