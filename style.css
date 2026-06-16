@@ -22,6 +22,11 @@
     --third-family: "Inter", sans-serif;
 }
 
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -37,14 +42,18 @@ h1 {
 }
 
 .main {
+    min-width: 1280px;
     margin: 0 auto;
+    height: 908px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* width: 1280px; */
-    height: 908px;
     background: url(./img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+}
+
+@media screen {
+    
 }
 
 .main_pets {
