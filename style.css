@@ -55,10 +55,10 @@ h1 {
 @media (max-width: 1280px) {
     .main {
 
-        height: 1165px;    
+        height: 1165px;
         align-items: center;
         justify-content: space-between;
-    }    
+    }
 }
 
 .main_pets {
@@ -80,8 +80,6 @@ h1 {
     height: 120px;
 }
 
-
-
 .head {
     width: 1200px;
     height: 60px;
@@ -91,12 +89,10 @@ h1 {
 }
 
 @media (max-width: 1280px) {
-    .head{        
-        width: 708px;      
-        
+    .head {
+        width: 708px;
     }
-            }
-
+}
 
 .logo {
     display: flex;
@@ -104,8 +100,6 @@ h1 {
     flex-direction: column;
     cursor: pointer;
 }
-
-
 
 .title,
 .title h1 {
@@ -115,8 +109,6 @@ h1 {
     line-height: 110%;
     letter-spacing: 0.06em;
     color: var(--color-primary);
-
-
 }
 
 .title_pets {
@@ -134,7 +126,6 @@ h1 {
     font-size: 13px;
     letter-spacing: 0.1em;
     color: var(--color-light-xl);
-
 }
 
 .subtitle_pets {
@@ -156,8 +147,6 @@ h1 {
     color: var(--color-dark-s);
     cursor: pointer;
 }
-
-
 
 .nav-menu_pets ul {
     list-style: none;
@@ -187,14 +176,13 @@ h1 {
     align-items: center;
 }
 
-
-@media (max-width: 1280px){
-    .start_screen_content{
-        width:569px;
+@media (max-width: 1280px) {
+    .start_screen_content {
+        width: 569px;
         height: 1015px;
         flex-direction: column;
         align-items: center;
-    }  
+    }
 }
 
 .content {
@@ -212,12 +200,11 @@ h1 {
     height: 728px;
 }
 
-@media (max-width: 1280px){    
-    .img_content{
+@media (max-width: 1280px) {
+    .img_content {
         height: 593px;
     }
 }
-
 
 .name_content {
     font-family: var(--font-family);
@@ -237,13 +224,11 @@ h1 {
 
 }
 
-
-@media (max-width: 1280px){    
-   .container_button_content{
-    display: flex;
-    justify-content: center;
-}
-
+@media (max-width: 1280px) {
+    .container_button_content {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .button_content {
@@ -251,7 +236,7 @@ h1 {
     border-style: hidden;
     width: 207px;
     height: 52px;
-    background: var(--color-primary); 
+    background: var(--color-primary);
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 17px;
@@ -265,7 +250,7 @@ h1 {
     background: var(--color-primary-light);
 }
 
-.about {  
+.about {
     margin: 0 auto;
     height: 588px;
     display: flex;
@@ -273,15 +258,40 @@ h1 {
     justify-content: center;
 }
 
+@media (max-width: 1280px) {
+    .about {
+        height: 1048px;
+    }
+}
+
 .about_pets {
     width: 1200px;
     height: 408px;
     display: flex;
     justify-content: space-evenly;
-
 }
 
-.about_content {    
+@media (max-width: 1280px) {
+    .about_pets {
+        width: 437px;
+        height: 868px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .container_img_about_pets {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img_about_pets {
+        width: 300px;
+        height: 408px;
+    }
+}
+
+.about_content {
     width: 430px;
     height: 380px;
     display: flex;
