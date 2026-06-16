@@ -353,8 +353,6 @@ h1 {
     color: var(--color-dark-l);
 }
 
-
-
 .button_pets {
     border-radius: 100px;
     border-style: hidden;
@@ -382,7 +380,6 @@ h1 {
     align-items: center;
     flex-wrap: wrap;
 }
-
 
 @media (max-width: 1280px) {
 
@@ -467,15 +464,19 @@ h1 {
 }
 
 .help {
-    margin: 0 auto;
-    /* width: 1280px; */
     height: 611px;
-    gap: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: center;   
     background: var(--color-light-xl);
+}
+
+.container_help {
+    height: 431px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;    
 }
 
 .name_help {
@@ -488,11 +489,19 @@ h1 {
     color: var(--color-dark-l);
 }
 
+.container_icon_help {
+    display: flex;
+    width: 1026px;
+    height: 281px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .icon_help {
     width: 1026px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -501,7 +510,7 @@ h1 {
     width: 850px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
 }
