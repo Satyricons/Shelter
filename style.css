@@ -318,22 +318,20 @@ h1 {
 
 }
 
-.container_pets {
+.pets {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-    /* width: 1280px; */
+    align-items: center;
     height: 877px;
     background: var(--color-light-l);
 }
 
-.pets {
-    width: 1200px;
+.container_pets {
+    height: 697px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
-
 }
 
 .name_pets {
