@@ -207,15 +207,6 @@ h1 {
     height: 322px;
 }
 
-
-@media (max-width: 1280px){
-    .content:nth-child(3){
-    display: flex;
-    align-items: center;
-    }
-}
-
-
 .img_content {
     display: flex;
     height: 728px;
@@ -246,13 +237,21 @@ h1 {
 
 }
 
+
+@media (max-width: 1280px){    
+   .container_button_content{
+    display: flex;
+    justify-content: center;
+}
+
+}
+
 .button_content {
     border-radius: 100px;
     border-style: hidden;
     width: 207px;
     height: 52px;
-    background: var(--color-primary);
- 
+    background: var(--color-primary); 
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 17px;
