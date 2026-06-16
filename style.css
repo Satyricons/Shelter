@@ -558,11 +558,26 @@ h1 {
     justify-content: center;  
 }
 
+@media (max-width: 1280px) {
+    .donation{
+        height: 783px;
+    }    
+}
+
 .container_donation{
     display: flex;
     justify-content: space-between;
     width: 915px;
-    height: 282px;
+}
+
+@media (max-width: 1280px) {
+    .container_donation {
+        display: flex;
+        flex-direction: column-reverse;       
+        justify-content: center;
+        align-items: center;
+        width: 505px;
+    }
 }
 
 .img_donation {
@@ -571,9 +586,10 @@ h1 {
 
 .text_donation {
     width: 380px;
+    height: 282px;;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    justify-content: space-between;
 }
 
 .name_text_donation {
