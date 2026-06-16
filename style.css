@@ -551,15 +551,18 @@ h1 {
 }
 
 .donation {
-    margin: 0 auto;
-    /* width: 1280px; */
-    height: 462px;
     display: flex;
-    flex-direction: row;
+    height: 462px;
     background: var(--color-light-l);
     align-items: center;
-    justify-content: center;
-    gap: 30px;
+    justify-content: center;  
+}
+
+.container_donation{
+    display: flex;
+    justify-content: space-between;
+    width: 915px;
+    height: 282px;
 }
 
 .img_donation {
