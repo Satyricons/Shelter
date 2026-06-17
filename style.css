@@ -388,25 +388,27 @@ h1 {
 }
 
 
-.container_slider_our_pets {
+.container_slider_pets_our_pets {
     width: 1200px;
-    height: 930px;
+height: 930px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    }
+    gap: 35px;
+}
 
 @media (max-width: 1280px) {
-    .container_slider_our_pets {
+    .container_slider_pets_our_pets {
         width: 580px;
+        height: 1365px;
     }
 
-    .container_slider_our_pets div:nth-child(4) {
+    .container_slider_pets_our_pets div:nth-child(4) {
         display: none;
     }
 
-    .container_slider_our_pets div:nth-child(5) {
+    .container_slider_pets_our_pets div:nth-child(5) {
         display: none;
     }
 }
