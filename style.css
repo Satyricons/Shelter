@@ -731,7 +731,9 @@ color: var(--color-dark-l);
 
 @media (max-width: 768px) {
 .name_help{
-    font-family: var(--font-family);
+    width: 222px;
+    height: 64px;
+   font-family: var(--font-family);
 font-weight: 400;
 font-size: 25px;
 line-height: 130%;
@@ -748,7 +750,7 @@ color: var(--color-dark-l);
     justify-content: center;
     flex-wrap: wrap;
     align-content: space-between;
-    gap: 55px 106px;
+    gap: 0px 119px;
 }
 
 @media (max-width: 1280px) {
@@ -762,14 +764,15 @@ color: var(--color-dark-l);
 
 @media (max-width: 768px) {
     .icon_help {
-        width: 290px;
+        width: 300px;
         height: 555px;
         gap: 0px 0px;
+        justify-content: flex-start;
     }
 }
 
 .icon {
-    width: 120px;
+    
     height: 113px;
     display: flex;
     flex-direction: column;
@@ -778,9 +781,33 @@ color: var(--color-dark-l);
     transition: 0.2s;
 }
 
+
+
 .icon:hover {
     transform: scale(1.05);
     cursor: pointer;
+}
+
+
+@media (max-width: 1268px) {
+    .icon {
+        width: 121px;
+        height: 112px;
+    }
+}
+
+@media (max-width: 768px) {
+    .icon {
+        width: 145px;
+        height: 87px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img_icon img {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .name_icon {
@@ -792,6 +819,19 @@ color: var(--color-dark-l);
     text-align: center;
     color: var(--color-dark-l);
 }
+
+@media (max-width: 768px) {
+    .name_icon {
+        font-family: var(--font-family);
+font-weight: 400;
+font-size: 15px;
+line-height: 110%;
+letter-spacing: 0.06em;
+text-align: center;
+color: var(--color-dark-l);
+    }
+}
+
 
 .donation {
     display: flex;
