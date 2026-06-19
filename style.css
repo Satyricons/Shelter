@@ -878,10 +878,13 @@ h1 {
     }
 }
 
-.img_donation {
+@media (max-width: 768px) {
+    .img_donation {
     width: 260px;
     height: 135px;
 }
+}
+
 
 @media (max-width:768px) {
     .img_donation img {
@@ -997,18 +1000,18 @@ h1 {
 }
 
 @media (max-width:768px) {
-    .ps_text_donation{
+    .ps_text_donation {
         width: 280px;
         height: 90px;
         font-family: var(--second-family);
-font-style: italic;
-font-weight: 400;
-font-size: 12px;
-line-height: 150%;
-text-align: justify;
-color: var(--color-dark-m);
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        text-align: justify;
+        color: var(--color-dark-m);
     }
-    
+
 }
 
 .footer {
@@ -1020,10 +1023,16 @@ color: var(--color-dark-m);
 }
 
 @media (max-width: 1280px) {
-    .footer {
-        display: flex;
+    .footer {       
         height: 639px;
         align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: 809px;
+        
     }
 }
 
@@ -1046,13 +1055,39 @@ color: var(--color-dark-m);
     }
 }
 
+@media (max-width: 768px) {
+    .container_footer {
+     
+        width: 300px;
+        height: 809px;
+        gap:0px;
+        align-items: flex-end;
+       
+    }
+}
+
 .name_footer {
+width: 278px;
+height: 90px;
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 35px;
+    font-size: 34px;
     line-height: 130%;
     letter-spacing: 0.06em;
     color: var(--color-light-xl);
+}
+
+@media (max-width:768px) {
+    .name_footer{
+        font-family: var(--font-family);
+font-weight: 400;
+font-size: 25px;
+line-height: 130%;
+letter-spacing: 0.06em;
+text-align: center;
+color: var(--color-light-xl);
+    }
+    
 }
 
 .adress_footer,
@@ -1073,6 +1108,19 @@ color: var(--color-dark-m);
     opacity: 0.6;
 }
 
+
+@media (max-width: 768px) {
+    .email_footer, .tel_footer{
+        font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+letter-spacing: 0.06em;
+color: var(--color-primary);
+    }
+    
+}
+
 .text_footer {
     height: 234px;
     display: flex;
@@ -1084,6 +1132,24 @@ color: var(--color-dark-m);
     line-height: 115%;
     letter-spacing: 0.06em;
     color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+    .text_footer{
+        width: 300px;
+        height: 235px;
+    }  
+    .text_footer:nth-child(1){
+        align-items: center;
+    }  
+}
+
+@media (max-width:768px) {
+    .img_footer img {
+        width: 260px;
+height: 269px;
+    }
+    
 }
 
 .our_pets {
