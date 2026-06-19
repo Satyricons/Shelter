@@ -721,26 +721,26 @@ h1 {
     width: 310px;
     height: 90px;
     font-family: var(--font-family);
-font-weight: 400;
-font-size: 35px;
-line-height: 130%;
-letter-spacing: 0.06em;
-text-align: center;
-color: var(--color-dark-l);
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--color-dark-l);
 }
 
 @media (max-width: 768px) {
-.name_help{
-    width: 222px;
-    height: 64px;
-   font-family: var(--font-family);
-font-weight: 400;
-font-size: 25px;
-line-height: 130%;
-letter-spacing: 0.06em;
-text-align: center;
-color: var(--color-dark-l);
-}    
+    .name_help {
+        width: 222px;
+        height: 64px;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: var(--color-dark-l);
+    }
 }
 
 .icon_help {
@@ -772,7 +772,7 @@ color: var(--color-dark-l);
 }
 
 .icon {
-    
+
     height: 113px;
     display: flex;
     flex-direction: column;
@@ -823,12 +823,12 @@ color: var(--color-dark-l);
 @media (max-width: 768px) {
     .name_icon {
         font-family: var(--font-family);
-font-weight: 400;
-font-size: 15px;
-line-height: 110%;
-letter-spacing: 0.06em;
-text-align: center;
-color: var(--color-dark-l);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: var(--color-dark-l);
     }
 }
 
@@ -844,6 +844,12 @@ color: var(--color-dark-l);
 @media (max-width: 1280px) {
     .donation {
         height: 783px;
+    }
+}
+
+@media (max-width: 768px) {
+    .donation {
+        height: 543px;
     }
 }
 
@@ -864,8 +870,28 @@ color: var(--color-dark-l);
     }
 }
 
-.img_donation {
-    width: 505px;
+@media (max-width: 768px) {
+    .container_donation {
+        width: 320px;
+        height: 543px;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 768px) {
+    .img_donation {
+    width: 260px;
+    height: 135px;
+}
+}
+
+
+@media (max-width:768px) {
+    .img_donation img {
+
+        width: 260px;
+        height: 135px;
+    }
 }
 
 .text_donation {
@@ -874,6 +900,15 @@ color: var(--color-dark-l);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media (max-width:768px) {
+    .text_donation {
+        width: 300px;
+        height: 281px;
+
+        align-items: center;
+    }
 }
 
 .name_text_donation {
@@ -885,6 +920,19 @@ color: var(--color-dark-l);
     color: var(--color-dark-l);
 }
 
+@media (max-width: 768px) {
+    .name_text_donation {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: var(--color-dark-l);
+    }
+
+}
+
 .title_text_donation {
     font-family: var(--font-family);
     font-weight: 400;
@@ -894,6 +942,16 @@ color: var(--color-dark-l);
     color: var(--color-dark-l);
 }
 
+@media (max-width: 768px) {
+    .title_text_donation {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 160%;
+        color: var(--color-dark-l);
+    }
+}
+
 .container_tel_text_donation {
     border-radius: 9px;
     width: 349px;
@@ -901,8 +959,14 @@ color: var(--color-dark-l);
     background: var(--color-primary);
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 15px;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+    .container_tel_text_donation {
+        width: 281px;
+        height: 43px;
+    }
 }
 
 .tel_text_donation {
@@ -914,6 +978,18 @@ color: var(--color-dark-l);
     color: var(--color-dark-l);
 }
 
+@media (max-width: 768px) {
+    .tel_text_donation {
+
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+        color: var(--color-dark-l);
+    }
+}
+
 .ps_text_donation {
     font-family: var(--second-family);
     font-style: italic;
@@ -921,6 +997,21 @@ color: var(--color-dark-l);
     font-size: 12px;
     line-height: 150%;
     color: var(--color-dark-m);
+}
+
+@media (max-width:768px) {
+    .ps_text_donation {
+        width: 280px;
+        height: 90px;
+        font-family: var(--second-family);
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        text-align: justify;
+        color: var(--color-dark-m);
+    }
+
 }
 
 .footer {
@@ -932,10 +1023,16 @@ color: var(--color-dark-l);
 }
 
 @media (max-width: 1280px) {
-    .footer {
-        display: flex;
+    .footer {       
         height: 639px;
         align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: 809px;
+        
     }
 }
 
@@ -958,13 +1055,39 @@ color: var(--color-dark-l);
     }
 }
 
+@media (max-width: 768px) {
+    .container_footer {
+     
+        width: 300px;
+        height: 809px;
+        gap:0px;
+        align-items: flex-end;
+       
+    }
+}
+
 .name_footer {
+width: 278px;
+height: 90px;
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 35px;
+    font-size: 34px;
     line-height: 130%;
     letter-spacing: 0.06em;
     color: var(--color-light-xl);
+}
+
+@media (max-width:768px) {
+    .name_footer{
+        font-family: var(--font-family);
+font-weight: 400;
+font-size: 25px;
+line-height: 130%;
+letter-spacing: 0.06em;
+text-align: center;
+color: var(--color-light-xl);
+    }
+    
 }
 
 .adress_footer,
@@ -985,6 +1108,19 @@ color: var(--color-dark-l);
     opacity: 0.6;
 }
 
+
+@media (max-width: 768px) {
+    .email_footer, .tel_footer{
+        font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+letter-spacing: 0.06em;
+color: var(--color-primary);
+    }
+    
+}
+
 .text_footer {
     height: 234px;
     display: flex;
@@ -996,6 +1132,24 @@ color: var(--color-dark-l);
     line-height: 115%;
     letter-spacing: 0.06em;
     color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+    .text_footer{
+        width: 300px;
+        height: 235px;
+    }  
+    .text_footer:nth-child(1){
+        align-items: center;
+    }  
+}
+
+@media (max-width:768px) {
+    .img_footer img {
+        width: 260px;
+height: 269px;
+    }
+    
 }
 
 .our_pets {
