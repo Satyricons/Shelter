@@ -1065,17 +1065,19 @@ h1 {
 }
 
 .name_footer {
-    width: 278px;
+    padding-top: 18px;
+    margin-bottom: 27px;
+    width: 279px;
     height: 90px;
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 34px;
+    font-size: 35px;
     line-height: 130%;
     letter-spacing: 0.06em;
     color: var(--color-light-xl);
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
     .name_footer {
         font-family: var(--font-family);
         font-weight: 400;
@@ -1110,18 +1112,18 @@ h1 {
     .tel_footer {
         font-family: var(--font-family);
         font-weight: 400;
-        font-size: 20px;
+        font-size: 22px;
         line-height: 115%;
         letter-spacing: 0.06em;
         color: var(--color-primary);
     }
 }
 
-.text_footer {
+.text_footer {    
     height: 234px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
@@ -1129,6 +1131,14 @@ h1 {
     letter-spacing: 0.06em;
     color: var(--color-primary);
 }
+
+.text_footer a:nth-child(2) {
+    padding-top: 18px;
+}
+.text_footer a:nth-child(3) {
+    padding-top: 24px;
+}
+
 
 @media (max-width: 768px) {
     .text_footer {
