@@ -547,7 +547,7 @@ h1 {
     }
 }
 
-.container_slider_pets_our_pets {
+.container_slider_our_pets {
     width: 1200px;
     min-height: 930px;
     display: flex;
@@ -558,14 +558,14 @@ h1 {
 }
 
 @media (max-width: 1279px) {
-    .container_slider_pets_our_pets {
+    .container_slider_our_pets {
         width: 580px;
         min-height: 1365px;
     }
 }
 
 @media (max-width: 767px) {
-    .container_slider_pets_our_pets {
+    .container_slider_our_pets {
         width: 270px;
         min-height: 1365px;
         gap: 0px;
@@ -622,6 +622,15 @@ h1 {
     overflow: hidden;
 }
 
+.container_slides_our_pets{
+    display: flex;
+    
+    width: 1200px;
+    min-height: 930px;
+    overflow: hidden;
+}
+
+
 @media (max-width:1279px) {
     .container_slides{
         width: 580px;
@@ -635,7 +644,16 @@ h1 {
 }
 
 .slides {
+    
     display: flex;
+    transition: 1s;
+}
+
+.slides_our_pets {
+    height: 930px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     transition: 1s;
 }
 
@@ -654,7 +672,7 @@ h1 {
 .slide {
     margin-right: 90px;
     width: 270px;
-    min-height: 435px;
+    height: 435px;
     justify-content: space-evenly;
     display: flex;
     flex-direction: column;
