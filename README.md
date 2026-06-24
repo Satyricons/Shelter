@@ -10,5 +10,7 @@ https://publish.obsidian.md/juniornotess/RS-Bootcamp-2026/Tasks/02a+—+Shelter+
 
 3. Adaptability
 
-3.1. Слайдер
+4. JS
+
+4.1. JS слайдер
 
