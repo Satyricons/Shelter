@@ -102,38 +102,37 @@ let list = [
   },
 
   {
-    name: 'Katrine',
-    img: './img/pets-katrine.png',
+    name: 'Bobik',
+    img: './img/Bobik.png',
+    type: 'Dog',
+    breed: 'None',
+    description: 'Бобик - хороший.',
+    age: '12 months',
+    inoculations: ['yes'],
+    diseases: ['none'],
+    parasites: ['yes']
+  },
+
+  {
+    name: 'Bengal',
+    img: './img/bengal.png',
     type: 'Cat',
     breed: 'British Shorthair',
     description:
-      'Katrine is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations.',
-    age: '6 months',
+      'Bengal is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations.',
+    age: '9 months',
     inoculations: ['panleukopenia'],
     diseases: ['none'],
     parasites: ['none']
   },
 
   {
-    name: 'Jennifer',
-    img: './img/pets-jennifer.png',
-    type: 'Dog',
-    breed: 'Labrador',
-    description:
-      "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
-    age: '2 months',
-    inoculations: ['none'],
-    diseases: ['none'],
-    parasites: ['none']
-  },
-
-  {
-    name: 'Woody',
-    img: './img/pets-woody.png',
-    type: 'Dog',
+    name: 'Domino',
+    img: './img/domino.png',
+    type: 'Cat',
     breed: 'Golden Retriever',
     description:
-      'Woody is a handsome 3 1/2 year old boy. Woody does know basic commands and is a smart pup. Since he is on the stronger side, he will learn a lot from your training. Woody will be happier when he finds a new family that can spend a lot of time with him.',
+      'Domino is a handsome 3 1/2 year old boy. Woody does know basic commands and is a smart pup. Since he is on the stronger side, he will learn a lot from your training. Woody will be happier when he finds a new family that can spend a lot of time with him.',
     age: '3 years 6 months',
     inoculations: ['adenovirus', 'distemper'],
     diseases: ['right back leg mobility reduced'],
@@ -141,63 +140,63 @@ let list = [
   },
 
   {
-    name: 'Scarlett',
-    img: './img/pets-scarlet.png',
+    name: 'Ovchar',
+    img: './img/Ovchar.png',
     type: 'Dog',
-    breed: 'Jack Russell Terrier',
+    breed: 'ovcharka',
     description:
-      'Scarlett is a happy, playful girl who will make you laugh and smile. She forms a bond quickly and will make a loyal companion and a wonderful family dog or a good companion for a single individual too since she likes to hang out and be with her human.',
-    age: '3 months',
+      'Ovchar is a happy, playful girl who will make you laugh and smile. She forms a bond quickly and will make a loyal companion and a wonderful family dog or a good companion for a single individual too since she likes to hang out and be with her human.',
+    age: '6 months',
     inoculations: ['parainfluenza'],
     diseases: ['none'],
     parasites: ['none']
   },
 
   {
-    name: 'Sophia',
-    img: './img/pets-sophia.png',
-    type: 'Dog',
+    name: 'Riji',
+    img: './img/riji.png',
+    type: 'Cat',
     breed: 'Shih tzu',
     description:
-      "Sophia here and I'm looking for my forever home to live out the best years of my life. I am full of energy. Everyday I'm learning new things, like how to walk on a leash, go potty outside, bark and play with toys and I still need some practice.",
-    age: '1 month',
+      "Riji here and I'm looking for my forever home to live out the best years of my life. I am full of energy. Everyday I'm learning new things, like how to walk on a leash, go potty outside, bark and play with toys and I still need some practice.",
+    age: '11 month',
     inoculations: ['parvovirus'],
     diseases: ['none'],
     parasites: ['none']
   },
 
   {
-    name: 'Timmy',
-    img: './img/pets-timmy.png',
-    type: 'Cat',
+    name: 'Snejok',
+    img: './img/snejok.png',
+    type: 'Dog',
     breed: 'British Shorthair',
     description:
-      'Timmy is an adorable grey british shorthair male. He loves to play and snuggle. He is neutered and up to date on age appropriate vaccinations. He can be chatty and enjoys being held. Timmy has a lot to say and wants a person to share his thoughts with.',
-    age: '2 years 3 months',
+      'Snejok is an adorable grey british shorthair male. He loves to play and snuggle. He is neutered and up to date on age appropriate vaccinations. He can be chatty and enjoys being held. Timmy has a lot to say and wants a person to share his thoughts with.',
+    age: '1 years 11 months',
     inoculations: ['calicivirus', 'viral rhinotracheitis'],
     diseases: ['kidney stones'],
     parasites: ['none']
   },
   {
-    name: 'Freddie',
-    img: './img/pets-freddie.png',
-    type: 'Cat',
-    breed: 'British Shorthair',
+    name: 'Tusik',
+    img: './img/tusik.png',
+    type: 'Dog',
+    breed: 'Dvorterer',
     description:
-      'Freddie is a little shy at first, but very sweet when he warms up. He likes playing with shoe strings and bottle caps. He is quick to learn the rhythms of his human’s daily life. Freddie has bounced around a lot in his life, and is looking to find his forever home.',
-    age: '2 months',
+      'Tusik is a little shy at first, but very sweet when he warms up. He likes playing with shoe strings and bottle caps. He is quick to learn the rhythms of his human’s daily life. Freddie has bounced around a lot in his life, and is looking to find his forever home.',
+    age: '12 months',
     inoculations: ['rabies'],
     diseases: ['none'],
     parasites: ['none']
   },
   {
-    name: 'Charly',
-    img: './img/pets-charly.png',
-    type: 'Dog',
-    breed: 'Jack Russell Terrier',
+    name: 'Volosatiy',
+    img: './img/volosa.png',
+    type: 'NLO',
+    breed: '?',
     description:
-      'This cute boy, Charly, is three years old and he likes adults and kids. He isn’t fond of many other dogs, so he might do best in a single dog home. Charly has lots of energy, and loves to run and play. We think a fenced yard would make him very happy.',
-    age: '8 years',
+      'This cute person is three years old and he likes adults and kids. He isn’t fond of many other dogs, so he might do best in a single dog home. Charly has lots of energy, and loves to run and play. We think a fenced yard would make him very happy.',
+    age: '? years',
     inoculations: ['bordetella bronchiseptica', 'leptospirosis'],
     diseases: ['deafness', 'blindness'],
     parasites: ['lice', 'fleas']
@@ -299,6 +298,105 @@ let list = [
     description:
       'This cute boy, Charly, is three years old and he likes adults and kids. He isn’t fond of many other dogs, so he might do best in a single dog home. Charly has lots of energy, and loves to run and play. We think a fenced yard would make him very happy.',
     age: '8 years',
+    inoculations: ['bordetella bronchiseptica', 'leptospirosis'],
+    diseases: ['deafness', 'blindness'],
+    parasites: ['lice', 'fleas']
+  },
+  {
+    name: 'Bobik',
+    img: './img/Bobik.png',
+    type: 'Dog',
+    breed: 'None',
+    description: 'Бобик - хороший.',
+    age: '12 months',
+    inoculations: ['yes'],
+    diseases: ['none'],
+    parasites: ['yes']
+  },
+
+  {
+    name: 'Bengal',
+    img: './img/bengal.png',
+    type: 'Cat',
+    breed: 'British Shorthair',
+    description:
+      'Bengal is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations.',
+    age: '9 months',
+    inoculations: ['panleukopenia'],
+    diseases: ['none'],
+    parasites: ['none']
+  },
+
+  {
+    name: 'Domino',
+    img: './img/domino.png',
+    type: 'Cat',
+    breed: 'Golden Retriever',
+    description:
+      'Domino is a handsome 3 1/2 year old boy. Woody does know basic commands and is a smart pup. Since he is on the stronger side, he will learn a lot from your training. Woody will be happier when he finds a new family that can spend a lot of time with him.',
+    age: '3 years 6 months',
+    inoculations: ['adenovirus', 'distemper'],
+    diseases: ['right back leg mobility reduced'],
+    parasites: ['none']
+  },
+  {
+    name: 'Ovchar',
+    img: './img/Ovchar.png',
+    type: 'Dog',
+    breed: 'ovcharka',
+    description:
+      'Ovchar is a happy, playful girl who will make you laugh and smile. She forms a bond quickly and will make a loyal companion and a wonderful family dog or a good companion for a single individual too since she likes to hang out and be with her human.',
+    age: '6 months',
+    inoculations: ['parainfluenza'],
+    diseases: ['none'],
+    parasites: ['none']
+  },
+
+  {
+    name: 'Riji',
+    img: './img/riji.png',
+    type: 'Cat',
+    breed: 'Shih tzu',
+    description:
+      "Riji here and I'm looking for my forever home to live out the best years of my life. I am full of energy. Everyday I'm learning new things, like how to walk on a leash, go potty outside, bark and play with toys and I still need some practice.",
+    age: '11 month',
+    inoculations: ['parvovirus'],
+    diseases: ['none'],
+    parasites: ['none']
+  },
+
+  {
+    name: 'Snejok',
+    img: './img/snejok.png',
+    type: 'Dog',
+    breed: 'British Shorthair',
+    description:
+      'Snejok is an adorable grey british shorthair male. He loves to play and snuggle. He is neutered and up to date on age appropriate vaccinations. He can be chatty and enjoys being held. Timmy has a lot to say and wants a person to share his thoughts with.',
+    age: '1 years 11 months',
+    inoculations: ['calicivirus', 'viral rhinotracheitis'],
+    diseases: ['kidney stones'],
+    parasites: ['none']
+  },
+  {
+    name: 'Tusik',
+    img: './img/tusik.png',
+    type: 'Dog',
+    breed: 'Dvorterer',
+    description:
+      'Tusik is a little shy at first, but very sweet when he warms up. He likes playing with shoe strings and bottle caps. He is quick to learn the rhythms of his human’s daily life. Freddie has bounced around a lot in his life, and is looking to find his forever home.',
+    age: '12 months',
+    inoculations: ['rabies'],
+    diseases: ['none'],
+    parasites: ['none']
+  },
+  {
+    name: 'Volosatiy',
+    img: './img/volosa.png',
+    type: 'NLO',
+    breed: '?',
+    description:
+      'This cute person is three years old and he likes adults and kids. He isn’t fond of many other dogs, so he might do best in a single dog home. Charly has lots of energy, and loves to run and play. We think a fenced yard would make him very happy.',
+    age: '? years',
     inoculations: ['bordetella bronchiseptica', 'leptospirosis'],
     diseases: ['deafness', 'blindness'],
     parasites: ['lice', 'fleas']

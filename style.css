@@ -546,7 +546,7 @@ h1 {
 
 .container_show_our_pets {
   width: 1200px;
-  min-height: 930px;
+  height: 930px;
   display: flex;
   /* justify-content: space-between; */
   /* align-items: center;
@@ -571,12 +571,13 @@ h1 {
 }
 
 .prev,
-.next {
+.next, .prev_start, .next_end {
   border-radius: 100px;
   border: 2px solid var(--color-primary);
   width: 52px;
   min-height: 52px;
   fill: var(--color-dark-3xl);
+  cursor: pointer;
   transition: 0.3s;
 }
 
@@ -600,17 +601,17 @@ h1 {
   }
 }
 
-#prev_inactive {
+#inactive {
   border: 2px solid var(--color-dark-s);
 }
 
-.prev:hover,
-.next:hover {
+.prev:active,
+.next:active {
   transform: scale(1.2);
-  cursor: pointer;
+  
 }
 
-#prev_inactive:hover {
+#inactive:hover {
   transform: scale(1);
 }
 
@@ -646,8 +647,8 @@ h1 {
 
 .slides_our_pets {
 
-  width: 1200px;
-    height: 1162px;
+
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1272,7 +1273,7 @@ h1 {
 }
 
 .container_our_pets {
-  min-height: 1162px;
+  height: 1162px;
   display: flex;
   flex-direction: column;
   align-items: center;
