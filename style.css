@@ -571,7 +571,9 @@ h1 {
 }
 
 .prev,
-.next, .prev_start, .next_end {
+.next,
+.prev_start,
+.next_end {
   border-radius: 100px;
   border: 2px solid var(--color-primary);
   width: 52px;
@@ -608,7 +610,6 @@ h1 {
 .prev:active,
 .next:active {
   transform: scale(1.2);
-  
 }
 
 #inactive:hover {
@@ -646,29 +647,23 @@ h1 {
 }
 
 .slides_our_pets {
-
-
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    transition: 1s;
-    justify-content: space-evenly;
-  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: 1s;
+  justify-content: space-evenly;
 }
 
-@media (max-width:1279px) {
-    .slides_our_pets{
-        height: 1365px;
-    }
-    
+@media (max-width: 1279px) {
+  .slides_our_pets {
+    height: 1365px;
+  }
 }
 
 @media (max-width: 1279px) {
   .slides {
     width: 580px;
-
   }
 }
 
@@ -680,7 +675,7 @@ h1 {
 
 .slide {
   margin-right: 90px;
-  
+
   width: 270px;
   height: 435px;
   justify-content: space-evenly;
@@ -693,7 +688,7 @@ h1 {
 }
 
 .slide_pets {
-    margin-right: 40px;
+  margin-right: 40px;
   width: 270px;
   height: 435px;
   justify-content: space-evenly;
