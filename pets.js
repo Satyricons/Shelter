@@ -408,27 +408,25 @@ let list = [
 
 //Формируем весь список живности
 
-//Кол-во страниц:
-const countPages = list.length/8
-console.log(countPages)
+///Кол-во страниц относительно размера экрана:
+let num
+if (window.innerWidth >= 1280) num = 8
+else if (window.innerWidth >= 768) num = 6
+else if (window.innerWidth >= 320) num = 3
+let countPages = list.length / num
 
-for(let i = 0; i < countPages; i++){
-document.querySelector('.container_slides_our_pets').insertAdjacentHTML(
-    'beforeend',`<div class="slides_our_pets"></div>`)}
+//Заполняем контейнер:
 
-
-for (let i = 0; i < 8; i++) {
+for (let i = 0; i < list.length; i++) {
   document.querySelector('.slides_our_pets').insertAdjacentHTML(
     'beforeend',
-    `<div class="slide">
+    `<div class="slide_pets">
                     <div class="img_slide"><img src=${list[i].img} alt=""></div>
                     <div class="name_slide">${list[i].name}</div>
                     <button class="button_slide" onclick=showPet(${i})>Learn more</button>
                 </div>`
   )
 }
-
-
 
 //Модальное окно при нажатии кнопки
 
@@ -451,38 +449,47 @@ function closePet () {
 //Сдвиг слайдеров
 
 let page = 0
-let pix = -270-40
+let pix = 0
 document.querySelector('.next').addEventListener('click', next)
 document.querySelector('.prev').addEventListener('click', prev)
 
 function next () {
-  if (window.innerWidth >= 1280) {
-    // pix=-(document.querySelector('.container_slides').clientWidth)
-    pix = -270 - 90
-  } else if (window.innerWidth >= 768) {
-    // pix=-(document.querySelector('.container_slides').clientWidth+40)
-    pix = -270 - 40
-  }
+  pix = -(document.querySelector('.container_show_our_pets').clientWidth + 40)
 
-  if (page + 1 < list.length / 3) {
+  console.log(pix)
+
+  if (page + 1 < countPages) {
     page++
-    document.querySelector('.slides').style.transform = `translate(${pix * page}px)`
+    document.querySelector(
+      '.container_slides_our_pets'
+    ).style.transform = `translate(${pix * page}px)`
   } else {
     page = 0
-    document.querySelector('.slides').style.transform = `translate(0px)`
+    document.querySelector(
+      '.container_slides_our_pets'
+    ).style.transform = `translate(0px)`
   }
 }
 
 function prev () {
   if (page > 0) {
     page--
-    document.querySelector('.slides').style.transform = `translate(${pix * page}px)`
+    document.querySelector(
+      '.container_slides_our_pets'
+    ).style.transform = `translate(${pix * page}px)`
   }
 }
 
 // отследить событие изменения окна
 
 window.addEventListener('resize', function () {
-  document.querySelector('.slides').style.transform = `translate(0px)`
+  document.querySelector(
+    '.container_slides_our_pets'
+  ).style.transform = `translate(0px)`
   page = 0
+  if (window.innerWidth >= 1280) num = 8
+else if (window.innerWidth >= 768) num = 6
+else if (window.innerWidth >= 320) num = 3
+countPages = list.length / num
+console.log(num)
 })

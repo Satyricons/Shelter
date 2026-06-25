@@ -339,18 +339,23 @@ function closePet () {
 //Сдвиг слайдеров
 
 let page = 0
-let pix = -270-40
+let pix = 0
 document.querySelector('.next').addEventListener('click', next)
 document.querySelector('.prev').addEventListener('click', prev)
 
 function next () {
+
   if (window.innerWidth >= 1280) {
-    // pix=-(document.querySelector('.container_slides').clientWidth)
-    pix = -270 - 90
-  } else if (window.innerWidth >= 768) {
-    // pix=-(document.querySelector('.container_slides').clientWidth+40)
-    pix = -270 - 40
+   pix = -(document.querySelector('.slides').parentElement.clientWidth+90)   
+  } else if (window.innerWidth >= 768) {    
+    pix = -(document.querySelector('.slides').parentElement.clientWidth+40)
   }
+else {    
+    pix = -(document.querySelector('.slides').parentElement.clientWidth+40)
+  }
+
+    
+ 
 
   if (page + 1 < list.length / 3) {
     page++
@@ -362,6 +367,16 @@ function next () {
 }
 
 function prev () {
+
+if (window.innerWidth >= 1280) {
+   pix = -(document.querySelector('.slides').parentElement.clientWidth+90)   
+  } else if (window.innerWidth >= 768) {    
+    pix = -(document.querySelector('.slides').parentElement.clientWidth+40)
+  }
+else {    
+    pix = -(document.querySelector('.slides').parentElement.clientWidth+40)
+  }
+
   if (page > 0) {
     page--
     document.querySelector('.slides').style.transform = `translate(${pix * page}px)`
