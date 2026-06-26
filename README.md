@@ -14,3 +14,6 @@ https://publish.obsidian.md/juniornotess/RS-Bootcamp-2026/Tasks/02a+—+Shelter+
 
 4.1. JS слайдер
 
+5. Asynh
+
+6. Мобильное меню
