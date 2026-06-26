@@ -136,9 +136,25 @@ function prev_start () {
 }
 
 // отследить событие изменения окна
-window.addEventListener('resize', function () {
-  reinit()
-})
+// window.addEventListener('resize', function () {
+//   reinit()
+// })
+
+
+let lastWidth = window.innerWidth;
+
+window.addEventListener('resize', () => {
+  const currentWidth = window.innerWidth;
+
+  if (currentWidth !== lastWidth) {
+    console.log(`Ширина изменена! Текущая ширина: ${currentWidth}px`);
+    // здесь ваш код, который выполнится при изменении ширины
+    reinit();
+    lastWidth = currentWidth; // обновляем сохраненное значение
+  }
+});
+
+
 
 //Модальное окно при нажатии кнопки
 function showPet (id) {
