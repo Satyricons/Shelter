@@ -185,15 +185,8 @@ function openBurger () {
 }
 
 function closeBurger (){
-
-  console.log("!")
   document.querySelector('.container_modal_menu').setAttribute('id', 'inactive_menu')
 }
-
-
-
-
-
 
   })
   // 4. Обрабатываем возможные ошибки (например, файл не найден)
