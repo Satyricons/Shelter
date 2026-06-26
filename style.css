@@ -1369,8 +1369,8 @@ h1 {
 }
 
 .mob_nav-menu_pets {
-  width: 243px;
-  min-height: 327px;
+  /* width: 243px;
+  min-height: 327px; */
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 32px;

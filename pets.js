@@ -42,6 +42,7 @@ function reinit () {
   document.querySelector('.next_end').addEventListener('click', next_end)
   document.querySelector('.prev_start').addEventListener('click', prev_start)
   document.querySelector('.burger').addEventListener('click', openBurger)
+  
   document.querySelector(
     '.container_slides_our_pets'
   ).style.transform = `translate(0px)`
@@ -72,7 +73,11 @@ if(!document.querySelector('.container_modal_menu')&(window.innerWidth < 768)){
         </nav>    
     </div>`
   )
-} else if(window.innerWidth < 768) {document.querySelector('.container_modal_menu').setAttribute('id', 'inactive')}}
+  document.querySelector('.container_modal_menu').addEventListener('click', closeBurger)
+} else if(window.innerWidth < 768) {document.querySelector('.container_modal_menu').setAttribute('id', 'inactive')}
+
+
+}
 
 function setPage (page) {
   document.querySelector('.page_pets').innerHTML = page + 1
@@ -155,7 +160,6 @@ window.addEventListener('resize', () => {
 });
 
 
-
 //Модальное окно при нажатии кнопки
 function showPet (id) {
   document.body.insertAdjacentHTML(
@@ -178,6 +182,12 @@ function closePet () {
 function openBurger () {
   if (!document.getElementById('active_menu')){document.querySelector('.container_modal_menu').setAttribute('id', 'active_menu')}
   else{document.querySelector('.container_modal_menu').setAttribute('id', 'inactive_menu')}  
+}
+
+function closeBurger (){
+
+  console.log("!")
+  document.querySelector('.container_modal_menu').setAttribute('id', 'inactive_menu')
 }
 
 
