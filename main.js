@@ -129,11 +129,26 @@ function prev () {
 
 // отследить событие изменения окна
 
-window.addEventListener('resize', function () {
-  document.querySelector('.slides').style.transform = `translate(0px)`
+let lastWidth = window.innerWidth;
+
+window.addEventListener('resize', () => {
+  const currentWidth = window.innerWidth;
+
+  if (currentWidth !== lastWidth) {
+    console.log(`Ширина изменена! Текущая ширина: ${currentWidth}px`);
+    document.querySelector('.slides').style.transform = `translate(0px)`
   page = 0
   buttonStatus('inactive')
-})
+    lastWidth = currentWidth; // обновляем сохраненное значение
+  }
+});
+
+
+// window.addEventListener('resize', function () {
+//   document.querySelector('.slides').style.transform = `translate(0px)`
+//   page = 0
+//   buttonStatus('inactive')
+// })
 
 function openBurger () {
   if (!document.getElementById('active_menu')){document.querySelector('.container_modal_menu').setAttribute('id', 'active_menu')}
