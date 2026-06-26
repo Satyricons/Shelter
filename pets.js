@@ -148,10 +148,39 @@ function showPet (id) {
   document.body.insertAdjacentHTML(
     'beforeend',
     `<div class="container_modal">
+  <div class="full_modal">
+  <img onclick=closePet() class="close_modal" src="./img/modal_close_button.png">      
     <div class="modal">
     <img src=${list[id].img} alt="">
+    <div class="modal_content">
+    
+    <div class="modal_content_one">
+    <div class="modal_mame_pets">${list[id].name}</div>
+    <div class="modal_type_pets">${list[id].type} - ${list[id].breed}</div>
+    <div class="modal_description_pets">${list[id].description}</div>
     </div>
-    <img onclick=closePet() class="close_modal" src="./img/modal_close_button.png">
+    
+    <div class="modal_content_two">
+    <div class="modal_specifications_pets">    
+    <ul>   
+    <li><b>Age: </b>${list[id].age}
+    </li>    
+    <li><b>Inoculations: </b>${list[id].inoculations}
+    </li>
+    <li><b>Inoculations: </b>${list[id].diseases}
+    </li>
+    <li><b>Parasites: </b>${list[id].parasites}
+    </li>
+    </ul>
+    </div>
+    </div>
+
+    </div>
+
+    </div>
+     
+    </div>
+   
     </div>`
   )
 }
