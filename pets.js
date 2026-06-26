@@ -180,9 +180,14 @@ function closePet () {
 //Меню мобильной версии
 
 function openBurger () {
-  if (!document.getElementById('active_menu')){document.querySelector('.container_modal_menu').setAttribute('id', 'active_menu')}
-  else{document.querySelector('.container_modal_menu').setAttribute('id', 'inactive_menu')}  
-}
+      !document.getElementById('active_menu')
+        ? document
+            .querySelector('.container_modal_menu')
+            .setAttribute('id', 'active_menu')
+        : document
+            .querySelector('.container_modal_menu')
+            .setAttribute('id', 'inactive_menu')      
+    }
 
 function closeBurger (){
   document.querySelector('.container_modal_menu').setAttribute('id', 'inactive_menu')
