@@ -1,27 +1,13 @@
-// 1. Отправляем запрос к файлу
-fetch('data.json')
-  // 2. Обрабатываем ответ от сервера
-  .then(response => {
-      // Проверяем, был ли запрос успешным
-      if (!response.ok) {
-          // Если нет (например, файл не найден), выбрасываем ошибку
-          throw new Error(`Ошибка при загрузке файла: ${response.status}`);
-      }
-      // Если все хорошо, преобразуем ответ в JSON-объект
-      return response.json();
-  })
-  // 3. Работаем с полученными данными
-  .then(list => {
-      // В этой переменной 'data' теперь находится обычный JavaScript-массив с объектами
-
-      
-
-
-
-
-//Инициализация
+let list = []
 let countPages, pix, page
-reinit()
+
+fetch('data.json')
+  .then(response => {
+    if (!response.ok) throw new Error(`Ошибка: ${response.status}`)
+    return response.json()
+  })
+  .then(data => {
+    list = data
 
 //Заполняем контейнер
 
@@ -35,6 +21,15 @@ for (let i = 0; i < list.length; i++) {
                 </div>`
   )
 }
+
+//Инициализация
+reinit()
+
+  })
+  .catch(error => {
+    console.error('Ошибка:', error)
+  }) 
+
 
 function reinit () {
   document.querySelector('.next').addEventListener('click', next)
@@ -75,8 +70,6 @@ if(!document.querySelector('.container_modal_menu')&(window.innerWidth < 768)){
   )
   document.querySelector('.container_modal_menu').addEventListener('click', closeBurger)
 } else if(window.innerWidth < 768) {document.querySelector('.container_modal_menu').setAttribute('id', 'inactive')}
-
-
 }
 
 function setPage (page) {
@@ -94,7 +87,6 @@ function buttonStatus (button, status) {
 }
 
 //Сдвиг слайдеров
-
 function next () {
   pix = -(document.querySelector('.container_show_our_pets').clientWidth + 40)
   if (page + 1 < countPages) {
@@ -114,7 +106,6 @@ function next_end () {
     page = Math.round(countPages) - 1
     setPage(page)
     buttonStatus('prev', 'active')
-
     document.querySelector(
       '.container_slides_our_pets'
     ).style.transform = `translate(${pix * page}px)`
@@ -141,16 +132,9 @@ function prev_start () {
 }
 
 // отследить событие изменения окна
-// window.addEventListener('resize', function () {
-//   reinit()
-// })
-
-
 let lastWidth = window.innerWidth;
-
 window.addEventListener('resize', () => {
   const currentWidth = window.innerWidth;
-
   if (currentWidth !== lastWidth) {
     console.log(`Ширина изменена! Текущая ширина: ${currentWidth}px`);
     // здесь ваш код, который выполнится при изменении ширины
@@ -158,7 +142,6 @@ window.addEventListener('resize', () => {
     lastWidth = currentWidth; // обновляем сохраненное значение
   }
 });
-
 
 //Модальное окно при нажатии кнопки
 function showPet (id) {
@@ -178,20 +161,20 @@ function closePet () {
 }
 
 //Меню мобильной версии
-
 function openBurger () {
-  if (!document.getElementById('active_menu')){document.querySelector('.container_modal_menu').setAttribute('id', 'active_menu')}
-  else{document.querySelector('.container_modal_menu').setAttribute('id', 'inactive_menu')}  
-}
+      !document.getElementById('active_menu')
+        ? document
+            .querySelector('.container_modal_menu')
+            .setAttribute('id', 'active_menu')
+        : document
+            .querySelector('.container_modal_menu')
+            .setAttribute('id', 'inactive_menu')      
+    }
 
 function closeBurger (){
   document.querySelector('.container_modal_menu').setAttribute('id', 'inactive_menu')
 }
 
-  })
-  // 4. Обрабатываем возможные ошибки (например, файл не найден)
-  .catch(error => {
-      console.error('Произошла ошибка:', error);
-  });
+
 
   

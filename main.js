@@ -1,41 +1,43 @@
-// 1. Отправляем запрос к файлу
+let list = []
+
 fetch('data.json')
-  // 2. Обрабатываем ответ от сервера
   .then(response => {
-      // Проверяем, был ли запрос успешным
-      if (!response.ok) {
-          // Если нет (например, файл не найден), выбрасываем ошибку
-          throw new Error(`Ошибка при загрузке файла: ${response.status}`);
-      }
-      // Если все хорошо, преобразуем ответ в JSON-объект
-      return response.json();
+    if (!response.ok) throw new Error(`Ошибка: ${response.status}`)
+    return response.json()
   })
-  // 3. Работаем с полученными данными
-  .then(list => {
-      // В этой переменной 'data' теперь находится обычный JavaScript-массив с объектами
+  .then(data => {
+    list = data
 
-//Формируем весь список живности
-
-for (let i = 0; i < list.length; i++) {
-  document.querySelector('.slides').insertAdjacentHTML(
-    'beforeend',
-    `<div class="slide">
+    //Формируем весь список живности
+    for (let i = 0; i < list.length; i++) {
+      document.querySelector('.slides').insertAdjacentHTML(
+        'beforeend',
+        `<div class="slide">
                     <div class="img_slide"><img src=${list[i].img} alt=""></div>
                     <div class="name_slide">${list[i].name}</div>
                     <button class="button_slide" onclick=showPet(${i})>Learn more</button>
                 </div>`
-  )
-}
+      )
+    }
+  })
+  .catch(error => {
+    console.error('Ошибка:', error)
+  })
 
- buttonStatus('inactive')
- function buttonStatus (status) {
-  document.querySelector('.prev').setAttribute('id', status) 
+
+
+buttonStatus('inactive')
+function buttonStatus (status) {
+  document.querySelector('.prev').setAttribute('id', status)
 }
 
 //Инициализация
 
-if(!document.querySelector('.container_modal_menu')&(window.innerWidth < 768)){
-      document.body.insertAdjacentHTML(
+if (
+  !document.querySelector('.container_modal_menu') &
+  (window.innerWidth < 768)
+) {
+  document.body.insertAdjacentHTML(
     'beforeend',
     `<div class="container_modal_menu">
     <nav class="mob_nav-menu_pets">
@@ -47,15 +49,18 @@ if(!document.querySelector('.container_modal_menu')&(window.innerWidth < 768)){
           </ul>
         </nav>    
     </div>`
-      )
-      document.querySelector('.container_modal_menu').addEventListener('click', closeBurger)
-} else if(window.innerWidth < 768) {document.querySelector('.container_modal_menu').setAttribute('id', 'inactive')}
-
-
+  )
+  document
+    .querySelector('.container_modal_menu')
+    .addEventListener('click', closeBurger)
+} else if (window.innerWidth < 768) {
+  document.querySelector('.container_modal_menu').setAttribute('id', 'inactive')
+}
 
 //Модальное окно при нажатии кнопки
-
 function showPet (id) {
+  console.log(list)
+
   document.body.insertAdjacentHTML(
     'beforeend',
     `<div class="container_modal">
@@ -77,7 +82,7 @@ let page = 0
 let pix = 0
 document.querySelector('.next').addEventListener('click', next)
 document.querySelector('.prev').addEventListener('click', prev)
-  document.querySelector('.burger').addEventListener('click', openBurger)
+document.querySelector('.burger').addEventListener('click', openBurger)
 
 function next () {
   if (window.innerWidth >= 1280) {
@@ -88,7 +93,7 @@ function next () {
     pix = -(document.querySelector('.slides').parentElement.clientWidth + 40)
   }
 
- let countPages =
+  let countPages =
     window.innerWidth >= 1280
       ? list.length / 3
       : window.innerWidth >= 768
@@ -106,7 +111,7 @@ function next () {
   } else {
     page = 0
     document.querySelector('.slides').style.transform = `translate(0px)`
-    buttonStatus('inactive')    
+    buttonStatus('inactive')
   }
 }
 
@@ -118,44 +123,42 @@ function prev () {
   } else {
     pix = -(document.querySelector('.slides').parentElement.clientWidth + 40)
   }
-
   if (page > 0) {
     page--
     document.querySelector('.slides').style.transform = `translate(${
       pix * page
     }px)`
-     if (page<1)buttonStatus('inactive')
+    if (page < 1) buttonStatus('inactive')
   }
 }
 
-// отследить событие изменения окна
-
-let lastWidth = window.innerWidth;
-
+// Отследить событие изменения окна
+let lastWidth = window.innerWidth
 window.addEventListener('resize', () => {
-  const currentWidth = window.innerWidth;
-
+  const currentWidth = window.innerWidth
   if (currentWidth !== lastWidth) {
-    console.log(`Ширина изменена! Текущая ширина: ${currentWidth}px`);
+    console.log(`Ширина изменена! Текущая ширина: ${currentWidth}px`)
     document.querySelector('.slides').style.transform = `translate(0px)`
-  page = 0
-  buttonStatus('inactive')
-    lastWidth = currentWidth; // обновляем сохраненное значение
+    page = 0
+    buttonStatus('inactive')
+    lastWidth = currentWidth // обновляем сохраненное значение
   }
-});
+})
 
+//Открываем и закрываем мобильное меню
 function openBurger () {
-  if (!document.getElementById('active_menu')){document.querySelector('.container_modal_menu').setAttribute('id', 'active_menu')}
-  else{document.querySelector('.container_modal_menu').setAttribute('id', 'inactive_menu')}  
+  !document.getElementById('active_menu')
+    ? document
+        .querySelector('.container_modal_menu')
+        .setAttribute('id', 'active_menu')
+    : document
+        .querySelector('.container_modal_menu')
+        .setAttribute('id', 'inactive_menu')
 }
 
-function closeBurger (){
-  document.querySelector('.container_modal_menu').setAttribute('id', 'inactive_menu')
+//Если нажать на мобильное окно, то оно закроется
+function closeBurger () {
+  document
+    .querySelector('.container_modal_menu')
+    .setAttribute('id', 'inactive_menu')
 }
-
-
-  })
-  // 4. Обрабатываем возможные ошибки (например, файл не найден)
-  .catch(error => {
-      console.error('Произошла ошибка:', error);
-  });
