@@ -87,9 +87,6 @@ function showPet (id) {
     </div>
     </div>
 
-
-
-
     </div>
 
     </div>
@@ -113,13 +110,15 @@ document.querySelector('.prev').addEventListener('click', prev)
 document.querySelector('.burger').addEventListener('click', openBurger)
 
 function next () {
-  if (window.innerWidth >= 1280) {
-    pix = -(document.querySelector('.slides').parentElement.clientWidth + 90)
-  } else if (window.innerWidth >= 768) {
-    pix = -(document.querySelector('.slides').parentElement.clientWidth + 40)
-  } else {
-    pix = -(document.querySelector('.slides').parentElement.clientWidth + 40)
-  }
+  // if (window.innerWidth >= 1280) {
+  //   pix = -(document.querySelector('.slides').parentElement.clientWidth + 90)
+  // } else if (window.innerWidth >= 768) {
+  //   pix = -(document.querySelector('.slides').parentElement.clientWidth + 40)
+  // } else {
+  //   pix = -(document.querySelector('.slides').parentElement.clientWidth + 40)
+  // }
+
+  window.innerWidth >= 1280 ? pix = -(document.querySelector('.slides').parentElement.clientWidth + 90) : pix = -(document.querySelector('.slides').parentElement.clientWidth + 40)
 
   let countPages =
     window.innerWidth >= 1280
@@ -182,6 +181,8 @@ function openBurger () {
     : document
         .querySelector('.container_modal_menu')
         .setAttribute('id', 'inactive_menu')
+
+        document.querySelector('.burger')? document.querySelector('.burger').setAttribute('class', 'burger_active') : document.querySelector('.burger_active').setAttribute('class', 'burger')
 }
 
 //Если нажать на мобильное окно, то оно закроется
@@ -189,4 +190,5 @@ function closeBurger () {
   document
     .querySelector('.container_modal_menu')
     .setAttribute('id', 'inactive_menu')
+    document.querySelector('.burger_active').setAttribute('class', 'burger')
 }
