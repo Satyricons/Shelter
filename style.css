@@ -1593,15 +1593,17 @@ height: 321px;
 
 }
 
-@media (max-width: 767px) {
-  .close_modal {     
-    top: 162px;
-    left: 286px;
-  }
-}
+
 @media (max-width: 1279px) {
   .close_modal {     
     top: 406px;
         left: 887px;
+  }
+}
+
+@media (max-width: 767px) {
+  .close_modal {     
+    top: 162px;
+    left: 286px;
   }
 }
