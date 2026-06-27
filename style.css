@@ -1585,25 +1585,23 @@ height: 321px;
 
 .close_modal {
   cursor: pointer;
-  position: fixed;
+ margin-left: 931px;
   width: 52px;
   height: 52px;
   top: 332px;
-    left: 1168px;
+   
 
 }
 
 
 @media (max-width: 1279px) {
   .close_modal {     
-    top: 406px;
-        left: 887px;
+            margin-left: 666px;
   }
 }
 
 @media (max-width: 767px) {
   .close_modal {     
-    top: 162px;
-    left: 286px;
+           margin-left: 246px;
   }
 }
