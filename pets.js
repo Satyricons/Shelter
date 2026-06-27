@@ -197,11 +197,16 @@ function openBurger () {
             .setAttribute('id', 'active_menu')
         : document
             .querySelector('.container_modal_menu')
-            .setAttribute('id', 'inactive_menu')      
+            .setAttribute('id', 'inactive_menu') 
+            
+
+
+document.querySelector('.burger')? document.querySelector('.burger').setAttribute('class', 'burger_active') : document.querySelector('.burger_active').setAttribute('class', 'burger')
     }
 
 function closeBurger (){
   document.querySelector('.container_modal_menu').setAttribute('id', 'inactive_menu')
+document.querySelector('.burger_active').setAttribute('class', 'burger')
 }
 
 
