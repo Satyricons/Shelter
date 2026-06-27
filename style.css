@@ -1369,7 +1369,7 @@ h1 {
   width: 952px;
   height: 552px;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
 
 @media (max-width: 1279px) {
@@ -1393,7 +1393,7 @@ h1 {
   box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
   background: hsl(0, 0%, 96%);
   border-radius: 9px;
-  margin-right: 51px;
+  /* margin-right: 51px; */
 }
 
 @media (max-width: 1279px) {
@@ -1416,7 +1416,7 @@ h1 {
     box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
     width: 240px;
     height: 341px;
-    margin-right: 40px;
+    /* margin-right: 40px; */
   }
 }
 
@@ -1585,13 +1585,23 @@ height: 321px;
 
 .close_modal {
   cursor: pointer;
+  position: fixed;
   width: 52px;
   height: 52px;
-  margin-right: 10px;
+  top: 332px;
+    left: 1168px;
+
 }
 
 @media (max-width: 767px) {
-  .close_modal {
-    margin-right: 12px;
+  .close_modal {     
+    top: 162px;
+    left: 286px;
+  }
+}
+@media (max-width: 1279px) {
+  .close_modal {     
+    top: 406px;
+        left: 887px;
   }
 }
