@@ -9,16 +9,23 @@ fetch('data.json')
     list = data
 
     //Формируем весь список живности
+//  Уберем <button class="button_slide" onclick=showPet(${i})>Learn more</button>
+
     for (let i = 0; i < list.length; i++) {
       document.querySelector('.slides').insertAdjacentHTML(
         'beforeend',
         `<div class="slide">
                     <div class="img_slide"><img src=${list[i].img} alt=""></div>
                     <div class="name_slide">${list[i].name}</div>
-                    <button class="button_slide" onclick=showPet(${i})>Learn more</button>
+                    <button class="button_slide")>Learn more</button>
                 </div>`
       )
     }
+
+    document.querySelector('.slides').addEventListener('click', function(event) {      
+      if (event.target.classList.contains('button_slide')) showPet (Array.from(document.querySelectorAll('.slide')).indexOf(event.target.closest('.slide')))
+    })
+
   })
   .catch(error => {
     console.error('Ошибка:', error)

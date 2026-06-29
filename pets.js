@@ -17,10 +17,14 @@ for (let i = 0; i < list.length; i++) {
     `<div class="slide_pets">
                     <div class="img_slide"><img src=${list[i].img} alt=""></div>
                     <div class="name_slide">${list[i].name}</div>
-                    <button class="button_slide" onclick=showPet(${i})>Learn more</button>
+                    <button class="button_slide")>Learn more</button>
                 </div>`
   )
 }
+
+ document.querySelector('.slides_our_pets').addEventListener('click', function(event) {      
+      if (event.target.classList.contains('button_slide')) showPet (Array.from(document.querySelectorAll('.slide_pets')).indexOf(event.target.closest('.slide_pets')))
+    })
 
 //Инициализация
 reinit()
