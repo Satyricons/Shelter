@@ -96,11 +96,12 @@ h1 {
 
 @media (max-width: 1279px) {
   .head {
-    width: 280px;
+    width: 708px;
   }
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 767px) {
   .head {
     display: flex;
     max-width: 326px;
